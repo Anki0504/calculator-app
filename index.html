@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Centering the Calculator and Styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+
+        .calculator {
+            width: 320px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .display {
+            width: 100%;
+            height: 50px;
+            margin-bottom: 20px;
+            font-size: 2em;
+            text-align: right;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+
+        .btn {
+            width: 70px;
+            height: 70px;
+            margin: 10px;
+            font-size: 1.5em;
+        }
+
+        .btn-clear {
+            background-color: #ff4d4d;
+            color: white;
+        }
+
+        .btn-equal {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .btn-operation {
+            background-color: #f8a145;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="btn btn-clear" id="clear">AC</button>
+            <button class="btn btn-operation" id="modulo">%</button>
+            <button class="btn btn-operation" id="divide">/</button>
+            <button class="btn btn-operation" id="multiply">*</button>
+
+            <button class="btn" id="seven">7</button>
+            <button class="btn" id="eight">8</button>
+            <button class="btn" id="nine">9</button>
+            <button class="btn btn-operation" id="subtract">-</button>
+
+            <button class="btn" id="four">4</button>
+            <button class="btn" id="five">5</button>
+            <button class="btn" id="six">6</button>
+            <button class="btn btn-operation" id="add">+</button>
+
+            <button class="btn" id="one">1</button>
+            <button class="btn" id="two">2</button>
+            <button class="btn" id="three">3</button>
+            <button class="btn" id="square">x²</button>
+
+            <button class="btn" id="zero">0</button>
+            <button class="btn" id="decimal">.</button>
+            <button class="btn btn-equal" id="equal">=</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
